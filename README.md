@@ -3,6 +3,7 @@
 
 ## CONTRIBUTING
 If you would like to contribute to our website, perform the following:
+
 1. Fork the `dev` repo to your GitHub account (the dev branch is where we'll keep all items to be tested before rolling into `master`)
 2. Create a branch for yourself that is specific to the changes you will be contributing
 3. Make any changes necessary to your repo and sync to your fork on GitHub
