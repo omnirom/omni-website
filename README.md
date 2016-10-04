@@ -9,6 +9,7 @@ If you would like to contribute to our website, perform the following:
 3. Make any changes necessary to your repo and sync to your fork on GitHub
 4. Initiate a pull request from your repo on GitHub, filling in all relevant information
 5. We will review your changes and comment where necessary, and if/when it is ready to be approved we will merge it into the `dev` branch
+<<<<<<< HEAD
 
 ## CREDITS
 CORE THEME "SHIFT" DESIGNED & DEVELOPED by [FreeHTML5.co](http://freehtml5.co/)
@@ -22,3 +23,5 @@ CORE THEME "SHIFT" DESIGNED & DEVELOPED by [FreeHTML5.co](http://freehtml5.co/)
 [Respond JS](https://github.com/scottjehl/Respond/blob/master/LICENSE-MIT)  
 [animate.css](http://daneden.me/animate)  
 [jQuery Waypoint](https://github.com/imakewebthings/waypoints/blog/master/licenses.txt)  
+=======
+>>>>>>> 8529c6781ac0f39e0e1102fa5be46e6eca6080e6
