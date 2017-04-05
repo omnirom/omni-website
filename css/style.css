@@ -18,6 +18,9 @@ body {
   color: #828282;
   background: #fff;
 }
+li {
+  list-style-type: none;
+}
 
 #page {
   position: relative;
