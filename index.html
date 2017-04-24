@@ -26,7 +26,7 @@
 	<link rel="stylesheet" href="css/icomoon.css"> <!-- Icomoon Icon Fonts-->
 	<link rel="stylesheet" href="css/bootstrap.css"> <!-- Bootstrap  -->
 	<link rel="stylesheet" href="css/style.css"> <!-- Theme style  -->
-
+    
 	<script src="js/modernizr-2.6.2.min.js"></script> <!-- Modernizr JS -->
 	<!-- FOR IE9 below -->
 	<!--[if lt IE 9]>
@@ -63,7 +63,8 @@
 			<div class="fh5co-top-social menu-1 text-right">
 				<ul class="fh5co-social">
 					<li><a href="https://plus.google.com/communities/102450203113748251717"><i class="icon-google"></i></a></li>
-                    <li><a href="https://twitter.com/omni_rom"><i class="icon-twitter"></i></a></li>	
+                    <li><a href="https://twitter.com/omni_rom"><i class="icon-twitter"></i></a></li>
+                    <li><a href="#paypal"><i class="icon-paypal"></i></a></li>
                     <li><a href="https://gerrit.omnirom.org/"><i class="icon-gerrit"></i></a></li>						
 					<li><a href="https://github.com/omnirom"><i class="icon-github"></i></a></li>
 				</ul>
@@ -301,6 +302,14 @@
 					<ul class="fh5co-social-icons">
                         <li><a href="https://plus.google.com/communities/102450203113748251717"><i class="icon-google"></i></a></li>
                         <li><a href="https://twitter.com/omni_rom"><i class="icon-twitter"></i></a></li>
+                        <li>
+                            <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top"><input name="cmd" type="hidden" value="_s-xclick" />
+                            <input name="hosted_button_id" type="hidden" value="576XHTD8F9D8Y" />
+                            <input id="paypal" data-toggle="tooltip" data-placement="bottom" title="BTC: 14SPe9efAauXN3SkQMSMAyQzioXidHnDxX" alt="PayPal - The safer, easier way to pay online!" name="submit" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" type="image" />
+                            <img src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" alt="" width="1" height="1" border="0" />
+                            <!-- <strong>BTC: </strong>14SPe9efAauXN3SkQMSMAyQzioXidHnDxX -->
+                            </form>
+                        </li>
                         <li><a href="https://gerrit.omnirom.org/"><i class="icon-gerrit"></i></a></li>						
 						<li><a href="https://github.com/omnirom"><i class="icon-github"></i></a></li>
 					</ul>
@@ -326,6 +335,12 @@
 	<script src="js/jquery.waypoints.min.js"></script>
 	<!-- Main -->
 	<script src="js/main.js"></script>
+    
+    <script>
+    jQuery(document).ready(function(){
+        $('[data-toggle="tooltip"]').tooltip(); 
+    });
+    </script>
 
 	</body>
 </html>
