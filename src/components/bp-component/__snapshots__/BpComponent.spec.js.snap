@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Boilerplate Component renders initial message 1`] = `
+<div
+  className="bp"
+>
+  <h1
+    className="bp__heading"
+  >
+    Base Dish
+  </h1>
+  <p
+    className="bp__subheading"
+  >
+    Start with something rather than nothing!
+  </p>
+  <button
+    className="bp__text-toggle"
+    onClick={[Function]}
+  >
+    Toggle Title
+  </button>
+</div>
+`;

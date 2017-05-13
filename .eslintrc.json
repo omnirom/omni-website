@@ -1,0 +1,84 @@
+{
+  "parser": "babel-eslint",
+  "extends": [
+    "eslint:recommended",
+    "plugin:import/errors",
+    "plugin:import/warnings"
+  ],
+  "plugins": [
+    "react"
+  ],
+  "env": {
+    "es6": true,
+    "browser": true,
+    "node": true,
+    "jest": true
+  },
+  "parserOptions": {
+    "ecmaVersion": 6,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "impliedStrict": true,
+      "jsx": true,
+      "experimentalObjectRestSpread": true
+    }
+  },
+  "rules": {
+    "arrow-spacing" : 1,
+    "brace-style" : 1,
+    "camelcase" : 1,
+    "comma-spacing" : 1,
+    "comma-style" : 1,
+    "eol-last" : 0,
+    "import/no-named-as-default" : 0,
+    "jsx-quotes" : 1,
+    "newline-after-var" : 1,
+    "no-alert" : 2,
+    "no-console" : 1,
+    "no-debugger" : 1,
+    "no-duplicate-case" : 2,
+    "no-lone-blocks" : 2,
+    "no-mixed-spaces-and-tabs" : 1,
+    "no-multi-spaces" : [1, {
+      "exceptions": {
+        "Property" : true
+      }
+    }],
+    "no-multiple-empty-lines" : [1, {"max" : 1}],
+    "no-trailing-spaces" : 1,
+    "no-undef" : 1,
+    "no-underscore-dangle" : 2,
+    "no-unreachable" : 1,
+    "no-unused-vars" : 2,
+    "no-var" : 1,
+    "operator-linebreak" : 1,
+    "quotes" : 0,
+    "react/jsx-boolean-value" : [1, "always"],
+    "react/jsx-closing-bracket-location" : 1,
+    "react/jsx-curly-spacing" : [1, "never"],
+    "react/jsx-key" : 2,
+    "react/jsx-no-duplicate-props" : 2,
+    "react/jsx-no-undef" : 1,
+    "react/jsx-pascal-case" : 1,
+    "react/jsx-uses-react" : 1,
+    "react/jsx-uses-vars" : 1,
+    "react/no-danger" : 0,
+    "react/no-did-mount-set-state" : 1,
+    "react/no-did-update-set-state" : 1,
+    "react/no-direct-mutation-state" : 1,
+    "react/no-multi-comp" : 1,
+    "react/no-set-state" : 0,
+    "react/no-unknown-property" : 1,
+    "react/prefer-es6-class" : 1,
+    "react/prop-types" : 1,
+    "react/react-in-jsx-scope" : 1,
+    "react/self-closing-comp" : 1,
+    "react/sort-comp" : 1,
+    "react/sort-prop-types" : 1,
+    "react/wrap-multilines" : 1,
+    "semi" : [1, "always"]
+  },
+  "globals": {
+    "React": true
+  }
+}
