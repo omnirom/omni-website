@@ -38,6 +38,10 @@ module.exports = () => {
           { loader: 'css-loader', options: { sourceMap: true } },
           { loader: 'sass-loader', options: { sourceMap: true } }
         ]},
+        {test: /\.(gif|png|jpe?g|svg)$/i, use: [
+          "file-loader",
+          "image-webpack-loader"
+        ]}
       ]
     }
   };

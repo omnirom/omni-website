@@ -1,0 +1,16 @@
+@import './_normalize.scss';
+
+// Colors
+$black: #000000;
+$grayishOrange: #edebe8;
+
+// Breakpoints
+$medium: 768px;
+$large:  1024px;
+
+// Mixins
+@mixin breakpoint($breakpoint) {
+    @media screen and (min-width: $breakpoint), print {
+        @content;
+    }
+}

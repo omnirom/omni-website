@@ -1,3 +1,5 @@
+import './_page.scss';
+import logo from '../../images/omnirom_logo.png';
 import React, {Component} from 'react';
 
 export class Page extends Component {
@@ -5,7 +7,12 @@ export class Page extends Component {
     return (
       <div className="page">
         <div className="page__header">
-          <a href="#">Omni</a>
+          <div className="page__header-contain">
+            <a className="page__header-logo" href="#">
+              <img src={logo} className="page__header-logo-image" />
+              OmniRom
+            </a>
+          </div>
         </div>
         <div className="page__content">
           <h1>Content</h1>
