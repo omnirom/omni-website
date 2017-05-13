@@ -1,0 +1,23 @@
+@import '../../globals/_globals';
+
+.nav {
+  margin: 0;
+  padding-left: 24px;
+  list-style: none;
+}
+
+.nav__list-item {
+  display: inline-block;
+  padding: 0 6px;
+}
+
+.nav__item-link {
+  color: rgba($black, 0.7);
+  text-decoration: none;
+  font-size: 12px;
+
+  &:hover,
+  &:focus {
+    color: $black;
+  }
+}
