@@ -1,8 +1,8 @@
 import {combineReducers} from 'redux';
-import {bpReducer} from '../components/bp-component/bpReducer';
+import {pageReducer} from '../containers/page/pageReducer';
 
 const reducers = combineReducers({
-  bpReducer
+  pageReducer
 });
 
 export default reducers;

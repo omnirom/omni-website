@@ -34,10 +34,164 @@
   text-decoration: none;
   font-size: 20px;
   font-weight: bold;
+  z-index: 15;
+  transition: color .6s;
+
+  .page__header--drawer-open & {
+    color: $white;
+
+    @include breakpoint($medium) {
+      color: $black;
+    };
+  }
 }
 
 .page__header-logo-image {
   padding-right: 6px;
   width: 30px;
   height: 30px;
+}
+
+.page__header-hamburger {
+  display: inline-block;
+  background: none;
+  border: 0;
+
+  @include breakpoint($medium) {
+    display: none;
+  }
+
+  .page__header-hamburger-line {
+    width: 24px;
+    height: 2px;
+    background-color: rgba($black, 0.8);
+    display: block;
+    margin: 5px auto;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .page__header--drawer-open & {
+    transition: all 0.3s ease-in-out;
+    transition-delay: 0.3s;
+    transform: rotate(45deg);
+
+    .page__header-hamburger-line {
+      background-color: $white;
+    }
+
+    .page__header-hamburger-line:nth-child(2){
+      width: 0px;
+    }
+
+    .page__header-hamburger-line:nth-child(1),
+    .page__header-hamburger-line:nth-child(3){
+      transition-delay: 0.3s;
+    }
+
+    .page__header-hamburger-line:nth-child(1){
+      transform: translateY(10px);
+    }
+
+    .page__header-hamburger-line:nth-child(3){
+      transform: translateY(-4px) rotate(90deg);
+    }
+  }
+}
+
+.page__nav-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 100%;
+  width: 100%;
+  background: rgba($black, 0.8);
+  overflow: hidden;
+  transition: bottom 0.4s;
+
+  @include breakpoint($medium) {
+    position: static;
+    width: auto;
+    max-width: none;
+    background: none;
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+    padding-left: 24px;
+  }
+
+  .page__header--drawer-open & {
+    bottom: 0;
+    padding-top: 50px;
+
+    @include breakpoint($medium) {
+      padding-top: 0;
+    }
+
+    .nav {
+      opacity: 1;
+      transition: opacity 0.2s;
+    }
+
+    .nav__list-item {
+      display: block;
+      padding: 12px 0;
+      text-align: center;
+
+      @include breakpoint($medium) {
+        display: inline-block;
+        padding: 0 9px;
+        text-align: left;
+      }
+
+      @include breakpoint($large) {
+        padding: 0 12px;
+      }
+    }
+
+    .nav__item-link {
+      font-size: 16px;
+      color: rgba($white, 0.7);
+
+      @include breakpoint($medium) {
+        font-size: 12px;
+        color: rgba($black, 0.7);
+      }
+
+      &:hover {
+        color: $white;
+
+        @include breakpoint($medium) {
+          color: $black;
+        }
+      }
+    }
+
+    .social-media-button {
+      font-size: 0;
+    }
+  }
+
+  .nav {
+    opacity: 0;
+
+    @include breakpoint($medium) {
+      opacity: 1;
+    }
+  }
+
+  .nav__list-item {
+    @include breakpoint($medium) {
+      padding: 0 9px;
+    }
+
+    @include breakpoint($large) {
+      padding: 0 12px;
+    }
+  }
+}
+
+.page__nav-container-head {
+  display: flex;
+  justify-content: flex-end;
+  height: 50px;
 }

@@ -1,6 +1,10 @@
 import './_page.scss';
 import logo from '../../images/omnirom_logo.png';
 import React, {Component} from 'react';
+import PropTypes from 'prop-types';
+import { connect } from 'react-redux';
+import { bindActionCreators } from 'redux';
+import { toggleNavDrawer } from './pageReducer';
 import Navigation from '../../components/navigation/Navigation.jsx';
 
 export class Page extends Component {
@@ -46,23 +50,37 @@ export class Page extends Component {
     },
   ]
 
+  handleNavToggle() {
+    this.props.toggleNavDrawer();
+  }
+
   render() {
+    const {navDrawerState} = this.props;
+
     return (
       <div className="page">
-        <div className="page__header">
+        <div className={`page__header ${navDrawerState ? 'page__header--drawer-open' : ''}`}>
           <div className="page__header-contain">
             <a className="page__header-logo" href="#">
               <img src={logo} className="page__header-logo-image" />
               OmniRom
             </a>
 
-            <Navigation
-              links={this.navItems}
-            />
+            <div className="page__nav-container">
+              <Navigation
+                links={this.navItems}
+              />
 
-            <Navigation
-              links={this.socialMediaButtons}
-            />
+              <Navigation
+                links={this.socialMediaButtons}
+              />
+            </div>
+
+            <button type="button" className="page__header-hamburger" onClick={this.handleNavToggle.bind(this)}>
+              <span className="page__header-hamburger-line" />
+              <span className="page__header-hamburger-line" />
+              <span className="page__header-hamburger-line" />
+            </button>
           </div>
         </div>
         <div className="page__content">
@@ -73,6 +91,24 @@ export class Page extends Component {
   }
 }
 
-Page.propTypes = {};
+Page.propTypes = {
+  navDrawerState: PropTypes.bool,
+  toggleNavDrawer: PropTypes.func
+};
 
-export default Page;
+function mapStateToProps(state) {
+  return {
+    navDrawerState: state.pageReducer.navDrawerState
+  };
+}
+
+function mapDispatchToProps(dispatch) {
+  return {
+    toggleNavDrawer: bindActionCreators(toggleNavDrawer, dispatch),
+  };
+}
+
+export default connect(
+  mapStateToProps,
+  mapDispatchToProps
+)(Page);
