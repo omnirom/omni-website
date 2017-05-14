@@ -1,5 +1,6 @@
 import webpack from 'webpack';
 import path from 'path';
+import autoprefixer from 'autoprefixer';
 import CopyWebpackPlugin from 'copy-webpack-plugin';
 
 const nodeModules = path.resolve(__dirname, 'node_modules');
@@ -43,6 +44,10 @@ module.exports = () => {
         {test: /\.scss$/, use: [
           "style-loader",
           { loader: 'css-loader', options: { sourceMap: true } },
+          { loader: 'postcss-loader', options: {
+            sourceMap: true,
+            plugins: () => [autoprefixer({browsers:["> 1%", "last 2 versions", "Firefox ESR", "Safari 8"]})]
+          }},
           { loader: 'sass-loader', options: { sourceMap: true } }
         ]},
         {test: /\.(gif|png|jpe?g|svg)$/i, use: [
