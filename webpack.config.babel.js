@@ -1,5 +1,6 @@
 import webpack from 'webpack';
 import path from 'path';
+import CopyWebpackPlugin from 'copy-webpack-plugin';
 
 const nodeModules = path.resolve(__dirname, 'node_modules');
 
@@ -27,7 +28,13 @@ module.exports = () => {
       new webpack.HotModuleReplacementPlugin(),
       new webpack.ProvidePlugin({
         Promise: 'exports-loader?global.Promise!es6-promise'
-      })
+      }),
+      new CopyWebpackPlugin([
+        {
+          from: 'fonts/**/*.*',
+          to: '.'
+        }
+      ])
     ],
 
     module: {

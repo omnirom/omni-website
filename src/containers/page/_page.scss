@@ -15,6 +15,7 @@
 .page__header-contain {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   margin: auto;
   max-width: $large;
   height: 50px;

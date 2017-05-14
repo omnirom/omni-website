@@ -1,0 +1,33 @@
+@import '../../globals/_globals';
+
+.social-media-button {
+  font-size: 0;
+  color: rgba($black, 0.4);
+  transition: color 0.5s;
+
+  &:before {
+    font-size: 20px;
+    font-family: 'icons';
+    content: "\ea89";
+  }
+}
+
+.social-media-button__google:before {
+  content: "\ea89";
+}
+
+.social-media-button__twitter:before {
+  content: "\ea97";
+}
+
+.social-media-button__paypal:before {
+  content: "\ead9";
+}
+
+.social-media-button__gerrit:before {
+  content: "\e900";
+}
+
+.social-media-button__github:before {
+  content: "\eab1";
+}
