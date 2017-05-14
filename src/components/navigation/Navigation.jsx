@@ -8,7 +8,7 @@ export class Navigation extends Component {
     const {links} = this.props;
 
     return (
-      <ul className="nav">
+      <ul className={`${this.props.hasOwnProperty('listClassname') ? this.props.listClassname : ''} nav`}>
         {
           links.map((link, index) => (
             <li className="nav__list-item" key={index}>
@@ -26,7 +26,8 @@ export class Navigation extends Component {
 }
 
 Navigation.propTypes = {
-  links: PropTypes.array
+  links: PropTypes.array,
+  listClassname: PropTypes.string
 };
 
 export default Navigation;

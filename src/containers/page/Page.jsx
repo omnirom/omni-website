@@ -73,6 +73,7 @@ export class Page extends Component {
 
               <Navigation
                 links={this.socialMediaButtons}
+                listClassname="social-nav"
               />
             </div>
 

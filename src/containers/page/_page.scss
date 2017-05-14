@@ -166,6 +166,24 @@
       }
     }
 
+    .social-nav {
+      text-align: center;
+      padding-top: 24px;
+
+      @include breakpoint($medium) {
+        padding-top: 0;
+      }
+
+      .nav__list-item {
+        padding: 0 9px;
+        display: inline-block;
+
+        @include breakpoint($large) {
+          padding: 0 12px;
+        }
+      }
+    }
+
     .social-media-button {
       font-size: 0;
     }
