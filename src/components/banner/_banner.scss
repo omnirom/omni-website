@@ -1,0 +1,87 @@
+@import '../../globals/_globals';
+
+.banner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  padding: 58px 16px;
+  background-size: cover;
+  background-position-y: 25%;
+  text-align: center;
+  color: $grayishOrange;
+}
+
+.banner__image {
+  position: relative;
+  width: 70px;
+
+  @include breakpoint($medium) {
+    width: 120px;
+  }
+
+  &:before {
+    position: absolute;
+    top: 95%;
+    left: 15%;
+    display: block;
+    width: 70%;
+    height: 11px;
+    background: rgba($black, 0.5);
+    border-radius: 50%;
+    animation: float-shadow 6s ease-in-out infinite;
+
+    content: '';
+  }
+
+  img {
+    max-width: 100%;
+    animation: float 6s ease-in-out infinite;
+  }
+}
+
+.banner__heading {
+  margin: 24px 0 12px;
+  font-size: 28px;
+
+  @include breakpoint($medium) {
+    margin: 48px 0 24px;
+    font-size: 32px;
+  }
+}
+
+.banner__sub-heading {
+  margin: 0;
+  font-size: 18px;
+
+  @include breakpoint($medium) {
+    font-size: 22px;
+  }
+}
+
+@keyframes float {
+	0% {
+		transform: translatey(0px);
+	}
+	50% {
+		transform: translatey(-10px);
+	}
+	100% {
+		transform: translatey(0px);
+	}
+}
+
+@keyframes float-shadow {
+  0% {
+    left: 15%;
+		width: 70%;
+	}
+	50% {
+    left: 10%;
+		width: 80%;
+	}
+	100% {
+    left: 15%;
+		width: 70%;
+	}
+}

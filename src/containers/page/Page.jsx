@@ -1,11 +1,13 @@
 import './_page.scss';
 import logo from '../../images/omnirom_logo.png';
+import bannerBg from '../../images/woods.jpg';
 import React, {Component} from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import { toggleNavDrawer } from './pageReducer';
 import Navigation from '../../components/navigation/Navigation.jsx';
+import Banner from '../../components/banner/Banner.jsx';
 
 export class Page extends Component {
   navItems = [
@@ -85,7 +87,12 @@ export class Page extends Component {
           </div>
         </div>
         <div className="page__content">
-          <h1>Content</h1>
+          <Banner
+            bgImageUrl={bannerBg}
+            centerImageUrl={logo}
+            heading="Omni"
+            subHeading="innovation, new features, transparency, community, and freedom"
+          />
         </div>
       </div>
     );
