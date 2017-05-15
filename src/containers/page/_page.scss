@@ -213,3 +213,42 @@
   justify-content: flex-end;
   height: 50px;
 }
+
+.page__content {
+  a {
+    color: $androidGreen;
+  }
+}
+
+.page__split-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: auto;
+  padding: 12px 10px;
+  max-width: $large;
+  color: $darkGray;
+  line-height: 1.5;
+
+  @include breakpoint($medium) {
+    flex-direction: row;
+    padding: 24px 10px;
+  }
+}
+
+.page__split-details-col {
+  width: 100%;
+  text-align: center;
+
+  @include breakpoint($medium) {
+    width: 45%;
+  }
+
+  ul {
+    list-style: none;
+  }
+}
+
+.page__split-details-heading {
+  color: $black;
+}
