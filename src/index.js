@@ -1,12 +1,18 @@
 import React from 'react';
 import {render} from 'react-dom';
-import store from './redux/store';
+import store, {history} from './redux/store';
 import {Provider} from 'react-redux';
+import {Route} from 'react-router';
+import {ConnectedRouter} from 'react-router-redux';
 
-import Page from './containers/page/Page.jsx';
+import Home from './containers/home/Home.jsx';
 
 render(
   <Provider store={store}>
-    <Page />
+    <ConnectedRouter history={history}>
+      <div>
+        <Route exact={true} path="/" component={Home}/>
+      </div>
+    </ConnectedRouter>
   </Provider>, document.getElementById('app')
 );
