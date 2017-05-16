@@ -5,13 +5,14 @@ import React, {Component} from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
+import {push} from 'react-router-redux';
 import { toggleNavDrawer } from './pageReducer';
 import Navigation from '../../components/navigation/Navigation.jsx';
 
 export class Page extends Component {
   navItems = [
     {url: '#', label: 'About Omni'},
-    {url: '#', label: 'Devices'},
+    {url: '/devices', label: 'Devices', routeType: 'internal'},
     {url: '#', label: 'Source'},
     {url: '#', label: 'Wiki'},
     {url: '#', label: 'Blog'},
@@ -51,6 +52,15 @@ export class Page extends Component {
     },
   ]
 
+  handleNavRoute(routeType, route, event = false) {
+    if (routeType === 'internal') {
+      if (event) {
+        event.preventDefault();
+      }
+      this.props.push(route);
+    }
+  }
+
   handleNavToggle() {
     this.props.toggleNavDrawer();
   }
@@ -66,7 +76,7 @@ export class Page extends Component {
       <div className="page">
         <div className={`page__header ${navDrawerState ? 'page__header--drawer-open' : ''}`}>
           <div className="page__header-contain">
-            <a className="page__header-logo" href="#">
+            <a className="page__header-logo" href="/" onClick={this.handleNavRoute.bind(this, 'internal', '/')}>
               <img src={logo} className="page__header-logo-image" />
               OmniRom
             </a>
@@ -74,6 +84,7 @@ export class Page extends Component {
             <div className="page__nav-container">
               <Navigation
                 links={this.navItems}
+                handleNavRoute={this.handleNavRoute.bind(this)}
               />
 
               <Navigation
@@ -109,6 +120,7 @@ Page.propTypes = {
   children: PropTypes.any,
   contentClassName: PropTypes.string,
   navDrawerState: PropTypes.bool,
+  push: PropTypes.func,
   toggleNavDrawer: PropTypes.func
 };
 
@@ -121,6 +133,7 @@ function mapStateToProps(state) {
 function mapDispatchToProps(dispatch) {
   return {
     toggleNavDrawer: bindActionCreators(toggleNavDrawer, dispatch),
+    push: bindActionCreators(push, dispatch)
   };
 }
 
