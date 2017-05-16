@@ -1,6 +1,9 @@
 @import '../../globals/_globals';
 
 .page {
+  display: flex;
+  flex-direction: column;
+  min-height: calc(100vh - 50px);
   padding-top: 50px;
 }
 
@@ -14,6 +17,7 @@
 
 .page__header-contain {
   display: flex;
+  flex: 1;
   align-items: center;
   justify-content: space-between;
   margin: auto;
@@ -215,6 +219,8 @@
 }
 
 .page__content {
+  flex: 1;
+
   a {
     color: $androidGreen;
   }
@@ -251,4 +257,17 @@
 
 .page__split-details-heading {
   color: $black;
+}
+
+.page__footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 24px 12px 12px;
+  background: $grayishOrange;
+}
+
+.page__copyright {
+  font-size: 12px;
+  color: rgba($black, 0.5);
 }
