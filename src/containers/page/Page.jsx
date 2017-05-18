@@ -11,7 +11,6 @@ import Navigation from '../../components/navigation/Navigation.jsx';
 
 export class Page extends Component {
   navItems = [
-    {url: '#', label: 'About Omni'},
     {url: '/devices', label: 'Devices', routeType: 'internal'},
     {url: '#', label: 'Source'},
     {url: '#', label: 'Wiki'},
