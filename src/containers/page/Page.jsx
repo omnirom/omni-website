@@ -13,7 +13,7 @@ export class Page extends Component {
   navItems = [
     {url: '/', label: 'Home', routeType: 'internal'},
     {url: '/devices', label: 'Devices', routeType: 'internal'},
-    {url: '#', label: 'Source'},
+    {url: '/source', label: 'Source', routeType: 'internal'},
     {url: 'https://docs.omnirom.org', label: 'Wiki', target: '_blank'},
     {url: '#', label: 'Blog'},
     {url: '#', label: 'Donate'}
