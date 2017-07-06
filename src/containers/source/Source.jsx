@@ -4,7 +4,7 @@ import Page from '../page/Page.jsx';
 import embedClose from '../../images/embed-close.svg';
 import android from '../../images/android.svg';
 
-export class Devices extends Component {
+export class Source extends Component {
   render() {
     return (
       <Page contentClassName="source">
@@ -36,4 +36,4 @@ export class Devices extends Component {
   }
 }
 
-export default Devices;
+export default Source;
