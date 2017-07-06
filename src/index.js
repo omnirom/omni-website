@@ -8,6 +8,7 @@ import {ConnectedRouter} from 'react-router-redux';
 import Home from './containers/home/Home.jsx';
 import Devices from './containers/devices/Devices.jsx';
 import Source from './containers/source/Source.jsx';
+import Donate from './containers/donate/Donate.jsx';
 
 render(
   <Provider store={store}>
@@ -16,6 +17,7 @@ render(
         <Route exact={true} path="/" component={Home}/>
         <Route path="/devices" component={Devices}/>
         <Route path="/source" component={Source}/>
+        <Route path="/donate" component={Donate}/>
       </div>
     </ConnectedRouter>
   </Provider>, document.getElementById('app')

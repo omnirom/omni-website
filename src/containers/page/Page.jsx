@@ -6,6 +6,7 @@ import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import {push} from 'react-router-redux';
+import classnames from 'classnames';
 import { toggleNavDrawer } from './pageReducer';
 import Navigation from '../../components/navigation/Navigation.jsx';
 
@@ -16,7 +17,7 @@ export class Page extends Component {
     {url: '/source', label: 'Source', routeType: 'internal'},
     {url: 'https://docs.omnirom.org', label: 'Wiki', target: '_blank'},
     {url: '#', label: 'Blog'},
-    {url: '#', label: 'Donate'}
+    {url: '/donate', label: 'Donate', routeType: 'internal'}
   ]
 
   socialMediaButtons = [
@@ -69,8 +70,14 @@ export class Page extends Component {
     const {
       children,
       contentClassName,
-      navDrawerState
+      navDrawerState,
+      constrain
     } = this.props;
+    const pageContentClassname = classnames({
+      [`${contentClassName}`]: !_.isEmpty(contentClassName),
+      "page__content": true,
+      "page__content--constrained": constrain
+    });
 
     return (
       <div className="page">
@@ -100,7 +107,7 @@ export class Page extends Component {
             </button>
           </div>
         </div>
-        <div className={`${!_.isEmpty(contentClassName) ? contentClassName : ''} page__content`}>
+        <div className={pageContentClassname}>
           {children}
         </div>
         <div className="page__footer">
@@ -116,8 +123,13 @@ export class Page extends Component {
   }
 }
 
+Page.defaultProps = {
+  constrain: false
+};
+
 Page.propTypes = {
   children: PropTypes.any,
+  constrain: PropTypes.bool,
   contentClassName: PropTypes.string,
   navDrawerState: PropTypes.bool,
   push: PropTypes.func,

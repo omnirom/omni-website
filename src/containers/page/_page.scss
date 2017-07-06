@@ -226,6 +226,16 @@
   }
 }
 
+.page__content--constrained {
+  margin: auto;
+  padding: 12px 10px;
+  max-width: $large;
+
+  @include breakpoint($medium) {
+    padding: 24px 10px;
+  }
+}
+
 .page__footer {
   display: flex;
   flex-direction: column;

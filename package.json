@@ -36,6 +36,7 @@
     "babel-preset-react": "6.24.1",
     "babel-preset-stage-1": "6.24.1",
     "babel-register": "6.24.1",
+    "classnames": "2.2.5",
     "copy-webpack-plugin": "^4.0.1",
     "es6-promise": "4.1.0",
     "exports-loader": "0.6.4",

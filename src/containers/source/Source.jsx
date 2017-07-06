@@ -7,7 +7,7 @@ import android from '../../images/android.svg';
 export class Source extends Component {
   render() {
     return (
-      <Page contentClassName="source">
+      <Page contentClassName="source" constrain={true}>
         <h1 className="source__page-title">Source</h1>
 
         <div className="source__section">

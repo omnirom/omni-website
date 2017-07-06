@@ -1,14 +1,6 @@
 @import '../../globals/_globals';
 
-.source {
-  margin: auto;
-  padding: 12px 10px;
-  max-width: $large;
-
-  @include breakpoint($medium) {
-    padding: 24px 10px;
-  }
-}
+.source {}
 
 .source__page-title {
   margin-bottom: 12px;
