@@ -51,6 +51,12 @@ export class Page extends Component {
       anchorClassname: 'social-media-button social-media-button__github',
       target: '_blank'
     },
+    {
+      url: 'http://jira.omnirom.org',
+      label: 'jira',
+      anchorClassname: 'social-media-button social-media-button__jira',
+      target: '_blank'
+    }
   ]
 
   handleNavRoute(routeType, route, event = false) {
