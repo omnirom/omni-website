@@ -1,0 +1,73 @@
+{
+  "name": "omni-website",
+  "version": "1.0.0",
+  "description": "Omni is about innovation, new features, transparency, community, and freedom",
+  "main": "index.js",
+  "repository": "https://github.com/omnirom/omni-website",
+  "author": "Rodrigo Gualberto <itzdrigz@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "dev": "webpack-dev-server",
+    "lint:js": "eslint src/ --ext .jsx",
+    "tests": "jest"
+  },
+  "devDependencies": {
+    "babel-eslint": "7.2.2",
+    "css-loader": "0.28.0",
+    "eslint": "3.19.0",
+    "eslint-plugin-import": "2.2.0",
+    "eslint-plugin-react": "6.10.3",
+    "jest": "19.0.2",
+    "jest-cli": "19.0.2",
+    "node-sass": "4.5.2",
+    "sass-loader": "6.0.3",
+    "style-loader": "0.16.1",
+    "webpack-dev-server": "2.4.2"
+  },
+  "dependencies": {
+    "autoprefixer": "7.0.1",
+    "axios": "0.16.1",
+    "babel-core": "6.24.1",
+    "babel-jest": "19.0.0",
+    "babel-loader": "6.4.1",
+    "babel-polyfill": "6.23.0",
+    "babel-preset-env": "1.4.0",
+    "babel-preset-es2015": "6.24.1",
+    "babel-preset-react": "6.24.1",
+    "babel-preset-stage-1": "6.24.1",
+    "babel-register": "6.24.1",
+    "classnames": "2.2.5",
+    "copy-webpack-plugin": "^4.0.1",
+    "es6-promise": "4.1.0",
+    "exports-loader": "0.6.4",
+    "file-loader": "0.11.1",
+    "history": "4.6.1",
+    "identity-obj-proxy": "3.0.0",
+    "image-webpack-loader": "3.3.1",
+    "lodash": "4.17.4",
+    "postcss-loader": "2.0.5",
+    "react": "15.5.4",
+    "react-dom": "15.5.4",
+    "react-redux": "5.0.4",
+    "react-router": "4.1.1",
+    "react-router-redux": "next",
+    "react-test-renderer": "15.5.4",
+    "redux": "3.6.0",
+    "webpack": "2.4.1"
+  },
+  "jest": {
+    "collectCoverage": true,
+    "setupTestFrameworkScriptFile": "./config/jest.js",
+    "testPathIgnorePatterns": [
+      "public",
+      "config"
+    ],
+    "coveragePathIgnorePatterns": [
+      "public",
+      "config"
+    ],
+    "moduleNameMapper": {
+      "^.+\\.(css|less|scss)$": "identity-obj-proxy"
+    }
+  }
+}
