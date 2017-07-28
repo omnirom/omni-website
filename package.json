@@ -7,7 +7,8 @@
   "author": "Rodrigo Gualberto <itzdrigz@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "dev": "webpack-dev-server",
+    "prod": "webpack -p --env=prod",
+    "dev": "webpack-dev-server --env=dev",
     "lint:js": "eslint src/ --ext .jsx",
     "tests": "jest"
   },
@@ -40,6 +41,7 @@
     "copy-webpack-plugin": "^4.0.1",
     "es6-promise": "4.1.0",
     "exports-loader": "0.6.4",
+    "extract-text-webpack-plugin": "2.1.2",
     "file-loader": "0.11.1",
     "history": "4.6.1",
     "identity-obj-proxy": "3.0.0",
