@@ -34,7 +34,6 @@
   display: flex;
   align-items: center;
   color: $black;
-  text-transform: uppercase;
   text-decoration: none;
   font-size: 20px;
   font-weight: bold;
@@ -52,8 +51,8 @@
 
 .page__header-logo-image {
   padding-right: 6px;
-  width: 30px;
-  height: 30px;
+  width: 25px;
+  height: 25px;
 }
 
 .page__header-hamburger {

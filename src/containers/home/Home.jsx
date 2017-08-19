@@ -1,6 +1,6 @@
 import './_home.scss';
 import logo from '../../images/omnirom_logo.png';
-import bannerBg from '../../images/woods.jpg';
+import bannerBg from '../../images/banner-shaded-small.png';
 import React, {Component} from 'react';
 import Page from '../page/Page.jsx';
 import Banner from '../../components/banner/Banner.jsx';
@@ -12,15 +12,18 @@ export class Home extends Component {
         <Banner
           bgImageUrl={bannerBg}
           centerImageUrl={logo}
-          heading="Omni"
-          subHeading="innovation, new features, transparency, community, and freedom"
+          heading="#GetOmnified"
+          subHeading="It's all about innovation, new features, transparency, community and freedom"
         />
 
         <div className="home__split-details">
           <div className="home__split-details-col">
             <h2 className="home__split-details-heading">About Omni</h2>
-            <p>Omni isn’t better, just different. It’s another option for the billion Android users out there. Android (vs. iOS and every other mobile OS) has thrived on options as well as the gigantic, talented development community that has emerged to build those options. That’s the beauty of Android – that you can pick and choose from a smorgasbord of devices with varying features and functionality.</p>
-            <p>Omni is a chance to get involved, no matter who you are. Developers, whether you’ve been developing apps for a week, or ROM features for 3 years, you’re welcome. Users, we know you want to help out, and now you can - we encourage all levels of contribution, from code to reporting bugs to squashing bugs to (what developer's tend to hate) documentation.</p>
+            <p>OmniROM is a custom ROM, based on the Android Open Source Project (AOSP) and enriched by our developers with lots of features and enhancements to give you a great Android experience on your mobile.</p>
+            <p><strong>Omni isn’t better, just different.</strong></p>
+            <p> It’s another option for the billion Android users out there. Android (vs. iOS and every other mobile OS) has thrived on options as well as the gigantic, talented development community that has emerged to build those options. That’s the beauty of Android – that you can pick and choose from a smorgasbord of devices with varying features and functionality.</p>
+            <p><strong>Omni is a chance to get involved, no matter who you are.</strong></p>
+            <p>Developers, whether you’ve been developing apps for a week, or ROM features for 3 years, you’re welcome. Users, we know you want to help out, and now you can - we encourage all levels of contribution, from code to reporting bugs to squashing bugs to (what developer's tend to hate) documentation.</p>
           </div>
           <div className="home__split-details-col">
             <h2 className="home__split-details-heading">Get Involved</h2>
