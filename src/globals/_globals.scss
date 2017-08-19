@@ -1,0 +1,24 @@
+@import './_normalize.scss';
+@import './_fonts.scss';
+
+body {
+  font-family: "Montserrat", Arial, sans-serif;
+}
+
+// Colors
+$black: #000000;
+$white: #ffffff;
+$darkGray: #828282;
+$grayishOrange: #edebe8;
+$androidGreen: #89a729;
+
+// Breakpoints
+$medium: 768px;
+$large:  1024px;
+
+// Mixins
+@mixin breakpoint($breakpoint) {
+    @media screen and (min-width: $breakpoint), print {
+        @content;
+    }
+}
