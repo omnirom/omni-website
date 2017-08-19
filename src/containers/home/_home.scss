@@ -20,17 +20,17 @@
 
 .home__split-details-col {
   width: 100%;
-  text-align: center;
 
   @include breakpoint($medium) {
     width: 45%;
   }
 
   ul {
-    list-style: none;
+    list-style: inherit;
   }
 }
 
 .home__split-details-heading {
   color: $black;
+  text-align: center;
 }

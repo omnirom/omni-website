@@ -91,7 +91,7 @@ export class Page extends Component {
           <div className="page__header-contain">
             <a className="page__header-logo" href="/" onClick={this.handleNavRoute.bind(this, 'internal', '/')}>
               <img src={logo} className="page__header-logo-image" />
-              OmniRom
+              OmniROM
             </a>
 
             <div className="page__nav-container">

@@ -29,14 +29,12 @@
     height: 11px;
     background: rgba($black, 0.5);
     border-radius: 50%;
-    animation: float-shadow 6s ease-in-out infinite;
 
     content: '';
   }
 
   img {
     max-width: 100%;
-    animation: float 6s ease-in-out infinite;
   }
 }
 
