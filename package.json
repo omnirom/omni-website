@@ -8,7 +8,7 @@
   "license": "MIT",
   "scripts": {
     "prod": "webpack -p --env=prod",
-    "dev": "webpack-dev-server --env=dev",
+    "dev": "webpack-dev-server --host 0.0.0.0 --env=dev",
     "lint:js": "eslint src/ --ext .jsx",
     "tests": "jest"
   },
