@@ -59,6 +59,7 @@
   display: inline-block;
   background: none;
   border: 0;
+  outline: none;
 
   @include breakpoint($medium) {
     display: none;

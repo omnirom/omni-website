@@ -5,14 +5,9 @@ export const initialState = {
 };
 
 export const pageReducer = (state = initialState, action = {}) => {
-    switch (action.type) {
-      case TOGGLE_NAV_DRAWER:
-        return {
-          navDrawerState: !state.navDrawerState
-        };
-      default:
-        return state;
-    }
+    return {
+      navDrawerState: !state.navDrawerState
+    };
 };
 
 export const toggleNavDrawer = () => ({ type: TOGGLE_NAV_DRAWER });
