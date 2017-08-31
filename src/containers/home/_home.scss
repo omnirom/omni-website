@@ -24,10 +24,6 @@
   @include breakpoint($medium) {
     width: 45%;
   }
-
-  ul {
-    list-style: inherit;
-  }
 }
 
 .home__split-details-heading {

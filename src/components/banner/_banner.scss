@@ -56,30 +56,3 @@
     font-size: 22px;
   }
 }
-
-@keyframes float {
-	0% {
-		transform: translatey(0px);
-	}
-	50% {
-		transform: translatey(-10px);
-	}
-	100% {
-		transform: translatey(0px);
-	}
-}
-
-@keyframes float-shadow {
-  0% {
-    left: 15%;
-		width: 70%;
-	}
-	50% {
-    left: 10%;
-		width: 80%;
-	}
-	100% {
-    left: 15%;
-		width: 70%;
-	}
-}
