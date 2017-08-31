@@ -84,7 +84,7 @@ export class Page extends Component {
       "page__content": true,
       "page__content--constrained": constrain
     });
-    const navOnClick = navDrawerState ? this.handleNavToggle.bind(this) : null;
+    const navOnClick = navDrawerState ? this.handleNavToggle.bind(this) : _.noop;
 
     return (
       <div className="page">
