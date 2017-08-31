@@ -84,6 +84,7 @@ export class Page extends Component {
       "page__content": true,
       "page__content--constrained": constrain
     });
+    const navOnClick = navDrawerState ? this.handleNavToggle.bind(this) : null;
 
     return (
       <div className="page">
@@ -98,11 +99,13 @@ export class Page extends Component {
               <Navigation
                 links={this.navItems}
                 handleNavRoute={this.handleNavRoute.bind(this)}
+                navItemClick={navOnClick}
               />
 
               <Navigation
                 links={this.socialMediaButtons}
                 listClassname="social-nav"
+                navItemClick={navOnClick}
               />
             </div>
 
