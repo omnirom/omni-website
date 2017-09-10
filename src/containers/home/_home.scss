@@ -1,0 +1,32 @@
+@import '../../globals/_globals';
+
+.home {}
+
+.home__split-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: auto;
+  padding: 12px 10px;
+  max-width: $large;
+  color: $darkGray;
+  line-height: 1.5;
+
+  @include breakpoint($medium) {
+    flex-direction: row;
+    padding: 24px 10px;
+  }
+}
+
+.home__split-details-col {
+  width: 100%;
+
+  @include breakpoint($medium) {
+    width: 45%;
+  }
+}
+
+.home__split-details-heading {
+  color: $black;
+  text-align: center;
+}
