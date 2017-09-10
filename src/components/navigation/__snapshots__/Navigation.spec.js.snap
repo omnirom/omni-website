@@ -1,0 +1,63 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Navigation Component renders navigation 1`] = `
+<ul
+  className="test-nav nav"
+>
+  <li
+    className="nav__list-item"
+  >
+    <a
+      className=" nav__item-link"
+      href="#"
+      target="_self"
+    >
+      Nav One
+    </a>
+  </li>
+  <li
+    className="nav__list-item"
+  >
+    <a
+      className=" nav__item-link"
+      href="#"
+      target="_self"
+    >
+      Nav Two
+    </a>
+  </li>
+  <li
+    className="nav__list-item"
+  >
+    <a
+      className=" nav__item-link"
+      href="#"
+      target="_self"
+    >
+      Nav Three
+    </a>
+  </li>
+  <li
+    className="nav__list-item"
+  >
+    <a
+      className=" nav__item-link"
+      href="#"
+      target="_self"
+    >
+      Nav Four
+    </a>
+  </li>
+  <li
+    className="nav__list-item"
+  >
+    <a
+      className=" nav__item-link"
+      href="#"
+      target="_self"
+    >
+      Nav Five
+    </a>
+  </li>
+</ul>
+`;

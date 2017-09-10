@@ -1,0 +1,30 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Banner Component renders banner 1`] = `
+<div
+  className="banner"
+  style={
+    Object {
+      "backgroundImage": "linear-gradient(180deg, rgba(0,0,0,0.2), rgba(0,0,0,0.7) 80%, #000), url(bg-image.png)",
+    }
+  }
+>
+  <div
+    className="banner__image"
+  >
+    <img
+      src="center-image.png"
+    />
+  </div>
+  <h1
+    className="banner__heading"
+  >
+    Banner Title
+  </h1>
+  <p
+    className="banner__sub-heading"
+  >
+    additional sub text goes here
+  </p>
+</div>
+`;
