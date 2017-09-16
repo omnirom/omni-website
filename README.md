@@ -1,5 +1,5 @@
 <img src="https://omnirom.org/wp-content/uploads/2013/11/omnirom_logo-big_layout_transparent-250px-150x150.png" alt="omni_logo">
-### Omni is about innovation, new features, transparency, community, and freedom. 
+### Omni is about innovation, new features, transparency, community, and freedom.
 
 ## CONTRIBUTING
 If you would like to contribute to our website, perform the following:
@@ -22,4 +22,24 @@ If you would like to contribute to our website, perform the following:
 to follow
 
 ## ADD A DEVICE
-to follow
+
+1. Place the device image in `src/images/phones/`
+2. Navigate to `src/containers/devices/Devices.jsx`
+3. Import the device image at the top:
+
+    ```javascript
+      import myDeviceName from '../../images/phones/myDeviceName.png';
+    ```
+4. Add a device object to the devices array:
+  ```javascript
+    devices = [
+      ...//other devices
+
+      {
+        model: "My Device",
+        make: "Google",
+        image: myDeviceName,
+        pageUrl: "http://dl.omnirom.org/myDevice"
+      }
+    ]
+  ```
