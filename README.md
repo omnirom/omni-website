@@ -13,10 +13,10 @@ If you would like to contribute to our website, perform the following:
 ## TO DO
 
 1. ~~Update website with content~~
-2. Identify correct way to do the blog
+2. ~~Identify correct way to do the blog~~
 3. ~~Begin to move devices to "Supported Devices" section using the existing format~~
 4. ~~Utilize "device_detail" page to highlight device (kernel, wiki, etc.)~~
-5. More I am sure
+5. Update instructions for how to contribute and test
 
 ## CREDITS
 to follow
