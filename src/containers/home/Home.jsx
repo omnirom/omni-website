@@ -1,6 +1,6 @@
 import './_home.scss';
-import logo from '../../images/omnirom_logo.png';
-import bannerBg from '../../images/banner-shaded-small.png';
+import logo from '../../images/omni_circle_logo_small.png';
+import bannerBg from '../../images/omni_nebula.jpg';
 import React, {Component} from 'react';
 import Page from '../page/Page.jsx';
 import Banner from '../../components/banner/Banner.jsx';

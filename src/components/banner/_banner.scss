@@ -22,19 +22,21 @@
 
   &:before {
     position: absolute;
-    top: 95%;
-    left: 15%;
+    top: 100%;
+    left: 10%;
     display: block;
-    width: 70%;
-    height: 11px;
+    width: 80%;
+    height: 5px;
     background: rgba($black, 0.5);
     border-radius: 50%;
+    animation: rotate-shadow 6s ease-out infinite;
 
     content: '';
   }
 
   img {
     max-width: 100%;
+    animation: rotate-shadow 6s ease-out infinite;
   }
 }
 
@@ -55,4 +57,17 @@
   @include breakpoint($medium) {
     font-size: 22px;
   }
+}
+
+@keyframes rotate-shadow {
+  0% {
+    transform: rotateY(0deg);
+    -ms-transform: rotateY(0deg); /* IE 9 */
+    -webkit-transform: rotateY(0deg); /* Safari and Chrome */
+	}
+	50% {
+    transform: rotateY(180deg);
+    -ms-transform: rotateY(180deg); /* IE 9 */
+    -webkit-transform: rotateY(180deg); /* Safari and Chrome */
+	}
 }
