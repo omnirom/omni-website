@@ -19,7 +19,13 @@ If you would like to contribute to our website, perform the following:
 5. Update instructions for how to contribute and test
 
 ## CREDITS
-to follow
+
+- React: https://reactjs.org/
+- Redux: http://redux.js.org/
+- React Router: https://reacttraining.com/react-router/
+- Webpack: https://webpack.js.org/
+- Jest: https://facebook.github.io/jest/
+- Lodash: https://lodash.com/
 
 ## ADD A DEVICE
 
