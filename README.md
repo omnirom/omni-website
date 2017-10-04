@@ -27,7 +27,33 @@ If you would like to contribute to our website, perform the following:
 - Jest: https://facebook.github.io/jest/
 - Lodash: https://lodash.com/
 
-## ADD A DEVICE
+## Editing meta data/head content
+
+`index.html` contains the skeleton of the site and is used for every page. The entire application is mounted within the body, specifically the div with an `id` of `app`.
+
+## Editing existing pages/content
+
+Top level pages live inside `src/containers/` and should be named after the route they match (convention not the rule).
+
+## Add a page/route
+
+1. Navigate to `src/index.js`
+2. import the container for the route (i.e. the page you want to render):
+  ```javascript
+    import myContainer from './containers/myContFolder/myContainer.jsx';
+  ```
+3. Add the route within the `<div>` inside of `<ConnectedRouter>`:
+
+  ```javascript
+  <ConnectedRouter history={history}>
+    <div>
+      ...// other routes
+      <Route path="/mycontainer" component={myContainer}/>
+    </div>
+  </ConnectedRouter>
+  ```
+
+## Add a device
 
 1. Place the device image in `src/images/phones/`
 2. Navigate to `src/containers/devices/Devices.jsx`
