@@ -139,6 +139,12 @@ export class Devices extends Component {
       pageUrl: "http://dl.omnirom.org/griffin"
     },
     {
+      model: "Moto X Style (clark)",
+      make: "Motorola",
+      image: motoXStyle,
+      pageUrl: "http://dl.omnirom.org/clark"
+    },
+    {
       model: "Redmi 3 Pro (kenzo)",
       make: "Xiaomi",
       image: kenzo,
