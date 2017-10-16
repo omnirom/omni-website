@@ -100,7 +100,7 @@ use `src/components/navigation/_social-media-button.scss` as a guide on how to a
 
 [Jest](https://facebook.github.io/jest/) is the testing framework in use. In order to have your test picked up by the test runner, name your file with a spec.js extension. (e.g. `MyComponent.spec.js`).
 
-Use one of the existing tests as a guide ([/blob/master/src/components/banner/Banner.spec.js](./blob/master/src/components/banner/Banner.spec.js)) or read more about Jest [here](https://facebook.github.io/jest/)
+Use one of the existing tests as a [guide](/blob/master/src/components/banner/Banner.spec.js) or read more about Jest [here](https://facebook.github.io/jest/).
 
 ## Learning Resources
 
