@@ -26,7 +26,6 @@ import seed from '../../images/phones/seed.png';
 import xperiaX from '../../images/phones/xperiaxsuzu.png';
 import xperiaXCompact from '../../images/phones/xperiaxcompact.png';
 import xperiaXzKagura from '../../images/phones/xperiaxz_kagura.png';
-import xperiaZ3 from '../../images/phones/xperiaz3.png';
 
 export class Devices extends Component {
   devices = [
@@ -179,12 +178,6 @@ export class Devices extends Component {
       make: "Sony",
       image: xperiaXzKagura,
       pageUrl: "http://dl.omnirom.org/kagura"
-    },
-    {
-      model: "Xperia Z3 (leo)",
-      make: "Sony",
-      image: xperiaZ3,
-      pageUrl: "http://dl.omnirom.org/leo"
     }
   ]
 
