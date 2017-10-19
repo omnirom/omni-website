@@ -18,8 +18,8 @@ export class Home extends Component {
         <div className="home__split-details">
           <div className="home__split-details-col">
             <h2 className="home__split-details-heading">About Omni</h2>
-            <p>OmniROM is our Android custom ROM variant, feature-packed but always with <strong>stability as #1 prio</strong> in mind.</p>
-            <p>Based on the Android Open Source Project (AOSP) and enriched by our developers with lots of custom enhancements to give you a great Android experience on your mobile.</p>
+            <p>OmniROM is our Android custom ROM variant, feature-packed but always with <strong>stability as #1 priority</strong> in mind.</p>
+            <p>Based on the Android Open Source Project (AOSP) and enriched by our developers with lots of custom enhancements, OmniROM has set out to give you a great Android experience on your mobile.</p>
             <p><strong>Omni isn’t better, just different.</strong></p>
             <p> It’s another option for the billion Android users out there. Android (vs. iOS and every other mobile OS) has thrived on options as well as the gigantic, talented development community that has emerged to build those options. That’s the beauty of Android – that you can pick and choose from a smorgasbord of devices with varying features and functionality.</p>
             <p><strong>Omni is a chance to get involved, no matter who you are.</strong></p>
