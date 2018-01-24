@@ -6,6 +6,7 @@ import leecoZl1 from '../../images/phones/leecozl1.png';
 import leecoX2 from '../../images/phones/leeco_x2.png';
 import lenovoA6000 from '../../images/phones/lenovo_a6000.png';
 import motoG4Plus from '../../images/phones/motog4plus_athene.png';
+import motoG5Plus from '../../images/phones/motog5plus_potter.png';
 import motoXStyle from '../../images/phones/motoxstyleclark.png';
 import motoZ from '../../images/phones/motoz_griffin.png';
 import nexus5x from '../../images/phones/nexus5x.png';
@@ -123,6 +124,12 @@ export class Devices extends Component {
       make: "Motorola",
       image: motoG4Plus,
       pageUrl: "http://dl.omnirom.org/athene"
+    },
+    {
+      model: "Moto G5 Plus (potter)",
+      make: "Motorola",
+      image: motoG5Plus,
+      pageUrl: "http://dl.omnirom.org/potter"
     },
     {
       model: "Moto Z (griffin)",
