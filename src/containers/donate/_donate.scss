@@ -1,0 +1,49 @@
+@import '../../globals/_globals';
+
+.donate {}
+
+.donate__info {
+  line-height: 1.5;
+}
+
+.donate__button-container {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.donate__button {
+  display: inline-block;
+  background: $white;
+  border: 1px solid $androidGreen;
+  border-radius: 5px;
+  padding: 10px;
+  color: $androidGreen;
+  font-size: 26px;
+  vertical-align: middle;
+  text-decoration: none;
+  transition: color 0.2s, border-color 0.2s;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  &:hover {
+    color: darken($androidGreen, 10%);
+    border-color: darken($androidGreen, 10%);
+  }
+
+  &:before {
+    margin-right: 5px;
+    font-size: 20px;
+    font-family: 'icons';
+    content: "\ead9";
+  }
+}
+
+.donate__crypto-table {
+  margin: 12px auto;
+
+  td {
+    padding: 20px 0 20px 20px;
+    text-align: left;
+    font-size: x-small;
+  }
+}

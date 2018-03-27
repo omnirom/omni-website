@@ -1,0 +1,55 @@
+@import '../../globals/_globals';
+
+.source {}
+
+.source__page-title {
+  margin-bottom: 12px;
+}
+
+.source__section {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+
+  @include breakpoint($medium) {
+    justify-content: space-between;
+  }
+
+  & + & {
+    margin-top: 20px;
+  }
+}
+
+.source__section-title {
+  @include breakpoint($medium) {
+    margin-top: 0;
+    width: 100%;
+  }
+}
+
+.source__section-image {
+  margin-left: 20px;
+  width: 35px;
+  height: 30px;
+
+  @include breakpoint($medium) {
+    margin-left: 0;
+    width: 20%;
+    height: auto;
+  }
+
+  img {
+    width: 100%;
+    max-height: 100px;
+  }
+}
+
+.source__section-text {
+  width: 100%;
+  line-height: 1.5;
+
+  @include breakpoint($medium) {
+    width: 78%;
+  }
+}
