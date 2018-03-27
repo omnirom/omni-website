@@ -1,6 +1,7 @@
 import './_devices.scss';
 import React, {Component} from 'react';
 import Page from '../page/Page.jsx';
+import defaultPhone from '../../images/phones/default_phone_omni.png';
 import elephoneTrunk from '../../images/phones/elephone_trunk.png';
 import leecoZl1 from '../../images/phones/leecozl1.png';
 import leecoX2 from '../../images/phones/leeco_x2.png';
@@ -58,6 +59,12 @@ export class Devices extends Component {
       make: "Oneplus",
       image: onePlus5,
       pageUrl: "http://dl.omnirom.org/oneplus5"
+    },
+    {
+      model: "5T (oneplus5t)",
+      make: "Oneplus",
+      image: onePlus5,
+      pageUrl: "http://dl.omnirom.org/oneplus5t"
     },
     {
       model: "Android One (seed)",
@@ -120,6 +127,18 @@ export class Devices extends Component {
       pageUrl: "http://dl.omnirom.org/a6000"
     },
     {
+      model: "Mi 5 (gemini)",
+      make: "Xiaomi",
+      image: defaultPhone,
+      pageUrl: "http://dl.omnirom.org/gemini"
+    },
+    {
+      model: "Mi Mix 2 (chiron)",
+      make: "Xiaomi",
+      image: defaultPhone,
+      pageUrl: "http://dl.omnirom.org/chiron"
+    },
+    {
       model: "Moto G4 Plus (athene)",
       make: "Motorola",
       image: motoG4Plus,
@@ -150,6 +169,12 @@ export class Devices extends Component {
       pageUrl: "http://dl.omnirom.org/kenzo"
     },
     {
+      model: "Redmi Note 4 (mido)",
+      make: "Xiaomi",
+      image: defaultPhone,
+      pageUrl: "http://dl.omnirom.org/mido"
+    },
+    {
       model: "Robin (ether)",
       make: "Nextbit",
       image: robin,
@@ -178,6 +203,12 @@ export class Devices extends Component {
       make: "Sony",
       image: xperiaXzKagura,
       pageUrl: "http://dl.omnirom.org/kagura"
+    },
+    {
+      model: "Xperia XZs (keyaki)",
+      make: "Sony",
+      image: defaultPhone,
+      pageUrl: "http://dl.omnirom.org/keyaki"
     }
   ]
 
