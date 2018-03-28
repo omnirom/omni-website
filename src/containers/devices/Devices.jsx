@@ -6,6 +6,7 @@ import elephoneTrunk from '../../images/phones/elephone_trunk.png';
 import leecoZl1 from '../../images/phones/leecozl1.png';
 import leecoX2 from '../../images/phones/leeco_x2.png';
 import lenovoA6000 from '../../images/phones/lenovo_a6000.png';
+import mimix2 from '../../images/phones/mimix2.png';
 import motoG4Plus from '../../images/phones/motog4plus_athene.png';
 import motoG5Plus from '../../images/phones/motog5plus_potter.png';
 import motoXStyle from '../../images/phones/motoxstyleclark.png';
@@ -135,7 +136,7 @@ export class Devices extends Component {
     {
       model: "Mi Mix 2 (chiron)",
       make: "Xiaomi",
-      image: defaultPhone,
+      image: mimix2,
       pageUrl: "http://dl.omnirom.org/chiron"
     },
     {
