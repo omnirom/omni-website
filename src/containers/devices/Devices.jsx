@@ -6,6 +6,7 @@ import elephoneTrunk from '../../images/phones/elephone_trunk.png';
 import leecoZl1 from '../../images/phones/leecozl1.png';
 import leecoX2 from '../../images/phones/leeco_x2.png';
 import lenovoA6000 from '../../images/phones/lenovo_a6000.png';
+import mi5 from '../../images/phones/mi5.png';
 import miMix2 from '../../images/phones/mimix2.png';
 import motoG4Plus from '../../images/phones/motog4plus_athene.png';
 import motoG5Plus from '../../images/phones/motog5plus_potter.png';
@@ -130,7 +131,7 @@ export class Devices extends Component {
     {
       model: "Mi 5 (gemini)",
       make: "Xiaomi",
-      image: defaultPhone,
+      image: mi5,
       pageUrl: "http://dl.omnirom.org/gemini"
     },
     {

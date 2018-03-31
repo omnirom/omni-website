@@ -1,0 +1,30 @@
+@import '../../globals/_globals';
+
+.notfound {}
+
+.notfound__info {
+  line-height: 1.5;
+}
+
+.notfound__data-table {
+  margin: 12px auto;
+
+  td {
+    padding: 20px 0 0px 20px;
+    text-align: center;
+  }
+}
+
+.notfound__section-image {
+
+  @include breakpoint($medium) {
+    margin-left: 0;
+    width: 20%;
+    height: auto;
+  }
+
+  img {
+    margin-top: 30px;
+    width: 250px;
+  }
+}
