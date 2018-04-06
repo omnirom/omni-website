@@ -29,6 +29,7 @@ import seed from '../../images/phones/seed.png';
 import xperiaX from '../../images/phones/xperiaxsuzu.png';
 import xperiaXCompact from '../../images/phones/xperiaxcompact.png';
 import xperiaXzKagura from '../../images/phones/xperiaxz_kagura.png';
+import xperiaXzsKeyaki from '../../images/phones/xperiaxzs_keyaki.png';
 
 export class Devices extends Component {
   devices = [
@@ -209,7 +210,7 @@ export class Devices extends Component {
     {
       model: "Xperia XZs (keyaki)",
       make: "Sony",
-      image: defaultPhone,
+      image: xperiaXzsKeyaki,
       pageUrl: "http://dl.omnirom.org/keyaki"
     }
   ]
