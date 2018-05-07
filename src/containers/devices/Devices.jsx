@@ -8,6 +8,7 @@ import leecoX2 from '../../images/phones/leeco_x2.png';
 import lenovoA6000 from '../../images/phones/lenovo_a6000.png';
 import mi5 from '../../images/phones/mi5.png';
 import mi6 from '../../images/phones/mi6_sagit.png';
+import mido from '../../images/phones/redminote4_mido.png';
 import miMix2 from '../../images/phones/mimix2.png';
 import motoG4Plus from '../../images/phones/motog4plus_athene.png';
 import motoG5Plus from '../../images/phones/motog5plus_potter.png';
@@ -22,6 +23,7 @@ import onePlus from '../../images/phones/opo.png';
 import onePlus2 from '../../images/phones/op2.png';
 import onePlus3t from '../../images/phones/op3t.png';
 import onePlus5 from '../../images/phones/op5.png';
+import onePlus5t from '../../images/phones/op5t.png';
 import oppo from '../../images/phones/oppofind7.png';
 import kenzo from '../../images/phones/redmi3pro_kenzo.png';
 import robin from '../../images/phones/ether.png';
@@ -67,7 +69,7 @@ export class Devices extends Component {
     {
       model: "5T (oneplus5t)",
       make: "Oneplus",
-      image: onePlus5,
+      image: onePlus5t,
       pageUrl: "http://dl.omnirom.org/oneplus5t"
     },
     {
@@ -181,7 +183,7 @@ export class Devices extends Component {
     {
       model: "Redmi Note 4 (mido)",
       make: "Xiaomi",
-      image: defaultPhone,
+      image: mido,
       pageUrl: "http://dl.omnirom.org/mido"
     },
     {
