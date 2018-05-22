@@ -17,7 +17,8 @@ export class Page extends Component {
     {url: '/source', label: 'Source', routeType: 'internal'},
     {url: 'https://github.com/omnirom/Docs', label: 'Wiki', target: '_blank'},
     {url: 'https://blog.omnirom.org', label: 'Blog', target: '_blank'},
-    {url: '/donate', label: 'Donate', routeType: 'internal'}
+    {url: '/donate', label: 'Donate', routeType: 'internal'},
+    {url: '/privacy', label: 'Privacy Policy', routeType: 'internal'}
   ]
 
   socialMediaButtons = [
@@ -125,7 +126,7 @@ export class Page extends Component {
             listClassname="social-nav"
           />
 
-          <p className="page__copyright">© 2013-17 OmniROM. All Rights Reserved.</p>
+          <p className="page__copyright">© 2013-18 OmniROM. All Rights Reserved.</p>
         </div>
       </div>
     );
