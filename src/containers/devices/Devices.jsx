@@ -3,6 +3,7 @@ import React, {Component} from 'react';
 import Page from '../page/Page.jsx';
 import defaultPhone from '../../images/phones/default_phone_omni.png';
 import elephoneTrunk from '../../images/phones/elephone_trunk.png';
+import honorv10 from '../../images/phones/honorv10_berkeley.png';
 import leecoZl1 from '../../images/phones/leecozl1.png';
 import leecoX2 from '../../images/phones/leeco_x2.png';
 import lenovoA6000 from '../../images/phones/lenovo_a6000.png';
@@ -197,6 +198,12 @@ export class Devices extends Component {
       make: "Elephone",
       image: elephoneTrunk,
       pageUrl: "http://dl.omnirom.org/trunk"
+    },
+    {
+      model: "View 10 (berkeley)",
+      make: "Honor",
+      image: honorv10,
+      pageUrl: "http://dl.omnirom.org/berkeley"
     },
     {
       model: "Xperia X (suzu)",
