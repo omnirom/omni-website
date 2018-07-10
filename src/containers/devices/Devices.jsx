@@ -20,6 +20,7 @@ import nexus6 from '../../images/phones/nexus6.png';
 import nexus6p from '../../images/phones/nexus6p.png';
 import nexus9 from '../../images/phones/nexus9.png';
 import nexus10 from '../../images/phones/nexus10_manta.png';
+import nubiaredmagic from '../../images/phones/nubiaredmagic.png';
 import onePlus from '../../images/phones/opo.png';
 import onePlus2 from '../../images/phones/op2.png';
 import onePlus3t from '../../images/phones/op3t.png';
@@ -114,6 +115,12 @@ export class Devices extends Component {
       make: "Google",
       image: nexus10,
       pageUrl: "http://dl.omnirom.org/manta"
+    },
+    {
+      model: "Nubia Red Magic (nx609j)",
+      make: "ZTE",
+      image: nubiaredmagic,
+      pageUrl: "http://dl.omnirom.org/nx609j"
     },
     {
       model: "LeMax 2 (x2)",
