@@ -26,8 +26,11 @@ import onePlus2 from '../../images/phones/op2.png';
 import onePlus3t from '../../images/phones/op3t.png';
 import onePlus5 from '../../images/phones/op5.png';
 import onePlus5t from '../../images/phones/op5t.png';
+import onePlus6 from '../../images/phones/op6.png';
 import oppo from '../../images/phones/oppofind7.png';
-import kenzo from '../../images/phones/redmi3pro_kenzo.png';
+import kenzo from '../../images/phones/redminote3_kenzo.png';
+import vince from '../../images/phones/redmi5_vince.png';
+import whyred from '../../images/phones/redminote5pro_whyred.png';
 import robin from '../../images/phones/ether.png';
 import tabs2 from '../../images/phones/tabs2.png';
 import seed from '../../images/phones/seed.png';
@@ -73,6 +76,12 @@ export class Devices extends Component {
       make: "Oneplus",
       image: onePlus5t,
       pageUrl: "http://dl.omnirom.org/oneplus5t"
+    },
+    {
+      model: "6 (oneplus6)",
+      make: "Oneplus",
+      image: onePlus6,
+      pageUrl: "http://dl.omnirom.org/oneplus6"
     },
     {
       model: "Android One (seed)",
@@ -183,7 +192,7 @@ export class Devices extends Component {
       pageUrl: "http://dl.omnirom.org/clark"
     },
     {
-      model: "Redmi 3 Pro (kenzo)",
+      model: "Redmi Note 3 (kenzo)",
       make: "Xiaomi",
       image: kenzo,
       pageUrl: "http://dl.omnirom.org/kenzo"
@@ -193,6 +202,18 @@ export class Devices extends Component {
       make: "Xiaomi",
       image: mido,
       pageUrl: "http://dl.omnirom.org/mido"
+    },
+    {
+      model: "Redmi 5 (vince)",
+      make: "Xiaomi",
+      image: vince,
+      pageUrl: "http://dl.omnirom.org/vince"
+    },
+    {
+      model: "Redmi Note 5 Pro (whyred)",
+      make: "Xiaomi",
+      image: whyred,
+      pageUrl: "http://dl.omnirom.org/whyred"
     },
     {
       model: "Robin (ether)",
