@@ -29,7 +29,7 @@ import onePlus5t from '../../images/phones/op5t.png';
 import onePlus6 from '../../images/phones/op6.png';
 import oppo from '../../images/phones/oppofind7.png';
 import kenzo from '../../images/phones/redminote3_kenzo.png';
-import vince from '../../images/phones/redmi5_vince.png';
+import vince from '../../images/phones/redmi5plus_vince.png';
 import whyred from '../../images/phones/redminote5pro_whyred.png';
 import robin from '../../images/phones/ether.png';
 import tabs2 from '../../images/phones/tabs2.png';
@@ -204,7 +204,7 @@ export class Devices extends Component {
       pageUrl: "http://dl.omnirom.org/mido"
     },
     {
-      model: "Redmi 5 (vince)",
+      model: "Redmi 5 Plus (vince)",
       make: "Xiaomi",
       image: vince,
       pageUrl: "http://dl.omnirom.org/vince"
