@@ -31,11 +31,7 @@ export class Home extends Component {
             <p><a href="http://github.com/omnirom" target="_blank">Github</a> – our codebase where we build from.</p>
             <p><a href="http://gerrit.omnirom.org" target="_blank">Gerrit</a> – view our project at the code level with the ability to see what’s merged, what’s open and what’s in review.</p>
             <p><a href="http://forum.xda-developers.com/forumdisplay.php?f=2601" target="_blank">Forum</a> – participate in general discussion, Q&A, and Features Development on XDA. Also find device-specific builds in their relevant forums on <a href="http://forum.xda-developers.com/">XDA</a></p>
-            <p><a href="http://webchat.freenode.net/?channels=omnirom" target="_blank">IRC</a> – get involved with Omni in realtime on IRC Freenode:</p>
-            <ul>
-              <li>General discussion in <strong>#omnirom</strong></li>
-              <li>Developer discussion in <strong>#omni</strong></li>
-            </ul>
+            <p><a href="https://t.me/OmniROM_Community" target="_blank">Telegram</a> – get connected to the Omni community in realtime on <strong>Telegram</strong></p>
           </div>
         </div>
       </Page>

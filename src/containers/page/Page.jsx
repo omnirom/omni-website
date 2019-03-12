@@ -126,7 +126,7 @@ export class Page extends Component {
             listClassname="social-nav"
           />
 
-          <p className="page__copyright">© 2013-18 OmniROM. All Rights Reserved.</p>
+          <p className="page__copyright">© 2013-19 OmniROM. All Rights Reserved.</p>
         </div>
       </div>
     );
