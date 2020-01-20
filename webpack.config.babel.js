@@ -7,6 +7,9 @@ import ExtractTextPlugin from 'extract-text-webpack-plugin';
 const nodeModules = path.resolve(__dirname, 'node_modules');
 
 module.exports = (env) => {
+  if (typeof env === 'undefined') {
+    env = 'dev';
+  }
   const config = {
     devtool: 'eval-source-map',
     context: path.join(__dirname, 'src'),
