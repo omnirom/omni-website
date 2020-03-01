@@ -8,7 +8,6 @@ import {ConnectedRouter} from 'react-router-redux';
 import Home from './containers/home/Home.jsx';
 import Devices from './containers/devices/Devices.jsx';
 import Source from './containers/source/Source.jsx';
-import Donate from './containers/donate/Donate.jsx';
 import Privacy from './containers/privacy/Privacy.jsx';
 import NotFound from './containers/404/NotFound.jsx';
 
@@ -19,7 +18,6 @@ render(
         <Route exact={true} path="/" component={Home}/>
         <Route path="/devices" component={Devices}/>
         <Route path="/source" component={Source}/>
-        <Route path="/donate" component={Donate}/>
         <Route path="/privacy" component={Privacy}/>
         <Route component={NotFound}/>
       </Switch>
