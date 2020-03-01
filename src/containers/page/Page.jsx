@@ -17,7 +17,6 @@ export class Page extends Component {
     {url: '/source', label: 'Source', routeType: 'internal'},
     {url: 'https://github.com/omnirom/Docs', label: 'Wiki', target: '_blank'},
     {url: 'https://blog.omnirom.org', label: 'Blog', target: '_blank'},
-    {url: '/donate', label: 'Donate', routeType: 'internal'},
     {url: '/privacy', label: 'Privacy Policy', routeType: 'internal'}
   ]
 
