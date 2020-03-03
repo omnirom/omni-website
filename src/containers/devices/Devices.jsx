@@ -1,5 +1,5 @@
 import './_devices.scss';
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 import Page from '../page/Page.jsx';
 import defaultPhone from '../../images/phones/default_phone_omni.png';
 import honorv10 from '../../images/phones/honorv10_berkeley.png';
@@ -21,134 +21,52 @@ import xperiaX from '../../images/phones/xperiaxsuzu.png';
 import xperiaXCompact from '../../images/phones/xperiaxcompact.png';
 import xperiaXzKagura from '../../images/phones/xperiaxz_kagura.png';
 import xperiaXzsKeyaki from '../../images/phones/xperiaxzs_keyaki.png';
+import axios from "axios";
 
 export class Devices extends Component {
+    state = {
+        deviceList: []
+    };
+    
     devices = [
-        {
-            model: "One (find7op)",
-            make: "Oneplus",
-            image: onePlus,
-            pageUrl: "http://dl.omnirom.org/find7op"
-        },
-        {
-            model: "3/3T (oneplus3)",
-            make: "Oneplus",
-            image: onePlus3t,
-            pageUrl: "http://dl.omnirom.org/oneplus3"
-        },
-        {
-            model: "5 (oneplus5)",
-            make: "Oneplus",
-            image: onePlus5,
-            pageUrl: "http://dl.omnirom.org/oneplus5"
-        },
-        {
-            model: "5T (oneplus5t)",
-            make: "Oneplus",
-            image: onePlus5t,
-            pageUrl: "http://dl.omnirom.org/oneplus5t"
-        },
-        {
-            model: "Galaxy Tab S2 (gts210vewifi)",
-            make: "Samsung",
-            image: tabs2,
-            pageUrl: "http://dl.omnirom.org/gts210vewifi"
-        },
-        {
-            model: "Nexus 5X (bullhead)",
-            make: "Google",
-            image: nexus5x,
-            pageUrl: "http://dl.omnirom.org/bullhead"
-        },
-        {
-            model: "Mi 5 (gemini)",
-            make: "Xiaomi",
-            image: mi5,
-            pageUrl: "http://dl.omnirom.org/gemini"
-        },
-        {
-            model: "Mi 6 (sagit)",
-            make: "Xiaomi",
-            image: mi6,
-            pageUrl: "http://dl.omnirom.org/sagit"
-        },
-        {
-            model: "Mi Mix 2 (chiron)",
-            make: "Xiaomi",
-            image: miMix2,
-            pageUrl: "http://dl.omnirom.org/chiron"
-        },
-        {
-            model: "Moto G4 Plus (athene)",
-            make: "Motorola",
-            image: motoG4Plus,
-            pageUrl: "http://dl.omnirom.org/athene"
-        },
-        {
-            model: "Moto G5 Plus (potter)",
-            make: "Motorola",
-            image: motoG5Plus,
-            pageUrl: "http://dl.omnirom.org/potter"
-        },
-        {
-            model: "Redmi 3 Pro (kenzo)",
-            make: "Xiaomi",
-            image: kenzo,
-            pageUrl: "http://dl.omnirom.org/kenzo"
-        },
-        {
-            model: "Redmi Note 4 (mido)",
-            make: "Xiaomi",
-            image: mido,
-            pageUrl: "http://dl.omnirom.org/mido"
-        },
-        {
-            model: "Robin (ether)",
-            make: "Nextbit",
-            image: robin,
-            pageUrl: "http://dl.omnirom.org/ether"
-        },
-        {
-            model: "View 10 (berkeley)",
-            make: "Honor",
-            image: honorv10,
-            pageUrl: "http://dl.omnirom.org/berkeley"
-        },
-        {
-            model: "Xperia X (suzu)",
-            make: "Sony",
-            image: xperiaX,
-            pageUrl: "http://dl.omnirom.org/suzu"
-        },
-        {
-            model: "Xperia X Compact (kugo)",
-            make: "Sony",
-            image: xperiaXCompact,
-            pageUrl: "http://dl.omnirom.org/kugo"
-        },
-        {
-            model: "Xperia XZ (kagura)",
-            make: "Sony",
-            image: xperiaXzKagura,
-            pageUrl: "http://dl.omnirom.org/kagura"
-        },
-        {
-            model: "Xperia XZs (keyaki)",
-            make: "Sony",
-            image: xperiaXzsKeyaki,
-            pageUrl: "http://dl.omnirom.org/keyaki"
-        }
+        "https://raw.githubusercontent.com/omnirom/android_device_oneplus_oneplus7t/android-10",
+        "https://raw.githubusercontent.com/omnirom/android_device_oneplus_oneplus6/android-10"
     ]
+
+    componentDidMount() {
+        this.loadDevices();
+    }
+
+    loadDevices = () => {
+        this.devices.map((repo, index) => {
+            axios
+                .get(repo + "/meta/config.json", {
+                })
+                .then(response => {
+                    let device = response.data;
+                    let d = device;
+                    d['image'] = repo + "/" + device['image']
+                    console.log(d);
+                    this.setState({
+                        ...this.state,
+                        deviceList: [...this.state.deviceList, d]
+                    });
+                })
+                .catch(error => {
+                    console.log("error", error);
+                });
+        })
+    }
 
     render() {
         return (
-            <Page contentClassName="devices">
+            <Page contentClassName="devices" >
                 <h1>Supported Devices</h1>
                 <div className="devices__list">
-                    {this.devices.map((device, index) => {
+                    {this.state.deviceList.map((device, index) => {
                         return (
                             <a href={device.pageUrl} target="_blank" className="devices__device" key={index}>
-                                <img src={device.image} className="devices__device-image" />
+                                <img src={device.image} className="devices__device-image" width="250" height="250" />
                                 <h3 className="devices__device-title">{device.model}</h3>
                                 <span className="devices__device-subtitle">{device.make}</span>
                             </a>
